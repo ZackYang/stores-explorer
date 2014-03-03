@@ -1,0 +1,9 @@
+development: &default
+  key: 20mOOhpIUfoBm1jdpnkrcnpJ0C30kHWgzRpEHmq5
+  secret: iiEDgAUfMvaizMBVkbPiRzKFComwlO3eCZhNjYgU
+  
+test:
+  *default
+  
+production:
+  *default

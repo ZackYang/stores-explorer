@@ -1,0 +1,101 @@
+== README
+
+This README would normally document whatever steps are necessary to get the
+application up and running.
+
+Things you may want to cover:
+
+* Ruby version
+
+* System dependencies
+
+* Configuration
+
+* Database creation
+
+* Database initialization
+
+* How to run the test suite
+
+* Services (job queues, cache servers, search engines, etc.)
+
+* Deployment instructions
+
+* ...
+
+
+Please feel free to use a different markup language if you do not plan to run
+<tt>rake doc:app</tt>.
+
+Objective: Explore local businesses via Factual API (http://factual.com/data/t/places) and save certain businesses in the database for further manipulation. (I'll provide you the API credential in a separate email)
+
+
+
+1. You will develop a simple web app with only 2 pages: stores-explorer.heroku.com and stores-explorer.heroku.com/stores/factual-FACTUALID. Please refer to store-explore-main.png and store-explore-store.png as reference.
+
+
+
+2. stores-explorer.heroku.com is similar to http://factual.com/data/t/places with the following major differences:
+
+* Add a dropdown "Source". This will allow the user to use either the Factual API or other APIs like Yelp, Foursquare, etc. You only need to handle the Factual API. Doing the Yelp one earns extra bonus. Don't worry about Foursquare.
+
+* Regardless of which external APIs we use (e.g. Factual, Yelp), we will always query the saved stores in the "stores" table along with external API and merge the entries for presentation. (to avoid duplication)
+
+* The country will always be "US"
+
+* Change the "Category Labels" to dropdown and only allow the Retail categories, such as Retail-Pet.
+
+* Ignore "Chain Name"
+
+* in the table below the filter, please skip the country column. (it's always US)
+
+* We preferably want to support at least 100 rows in the table on 1 page.
+
+
+
+* (Important) You will need to merge all the result from Factual and from Bindo DB and avoid duplication. I added a column "In DB" to the front to indicate if a specific entry is from the DB or from the API. (refer to #3 below to understand why/how entries are added to Bindo DB and how merge could be done.)
+
+
+
+* In order to avoid duplication, we can show all the saved stores that matched the criteria and then all the stores via the API where factual_id is not in (select factual_id from crosswalks where store_id is not null).
+
+
+
+* Please make the map on the right as big as the table on the left.
+
+
+
+3. stores-explorer.heroku.com/stores/factual-FACTUALID or stores-explorer.heroku.com/stores/bindo-store-id
+
+* This page is similar to http://factual.com/346171b1-5e14-4f2d-9fc5-67d36fc2f191
+
+* If this entry is already on Bindo DB, the url should be stores-explorer.heroku.com/stores/bindo-store-id. If this entry is fetched via the Factual API, the url should be stores-explorer.heroku.com/stores/factual-FACTUALID
+
+* Make sure that you display all the attributes returned by the Factual API
+
+* Add a button "Add to Database" to the page. When the button is clicked, we will add the entry to a db table.
+
+
+
+4. Database schema to keep things simple:
+
+* there will be 2 db tables: STORES and EXTERNAL_SOURCES.
+
+
+
+* db table STORES is to save businesses added to the DB. The STORES table should have the following columns: Store ID, Store name, address, city, state, zip, country, neighborhood, Tel, Latitude, Longitude, Hours, Categories, etc.
+
+
+
+* db table EXTERNAL_SOURCES is to show all the external sources (factual, yelp, foursquare) related to a specific store, the columns show include: Store ID, Source (Factual, Yelp, etc), Source_ID (Factual_ID, Yelp_ID, etc), Business Name, address, city, state, zip, country, Url, Last_api_call_at, etc.
+
+
+
+* why 2 tables with duplicated content? The EXTERNAL_SOURCES table is to store data straight from external API such as Factual, Yelp, etc. We shouldn't manipulate the data in this table. The Last_api_call_at indicates when the data is copied from the API. The STORES table is to store "official / verified" store data. We cannot rely 100% on any external data. When I click the "Add to Database" button on stores-explorer.heroku.com/stores/factual-FACTUALID, a new entry will be created on Stores and Crosswalks.
+
+
+
+* EXTERNAL_SOURCES's source and source_id is a composite key. When http://factual.com/346171b1-5e14-4f2d-9fc5-67d36fc2f191 is queried, all the external crosswalks should be saved to the EXTERNAL_SOURCES table. The Last_api_call_at for the Factual entry should be populated but the Last_api_call_at for other non-factual crosswalks should be blank because we haven't queried the db from Yelp or other non-factual crosswalks yet.
+
+
+

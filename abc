@@ -1,0 +1,399 @@
+---
+us_ca_la_retail:
+  status: ok
+  response:
+    data:
+    - address: 8124 W 3rd St
+      address_extended: Ste 211
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 1ea3ff7c-1da6-4d16-bbf0-3b015536921d
+      fax: (323) 653-6991
+      latitude: 34.071981
+      locality: Los Angeles
+      longitude: -118.366767
+      name: Center For the Study of Political Graphics
+      neighborhood:
+      - Mid City West
+      - Fairfax District
+      postcode: '90048'
+      region: CA
+      tel: (323) 653-4662
+      website: http://www.politicalgraphics.org
+    - address: 502 Chung King Ct
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: ddb707c0-d829-012e-561a-003048cad9da
+      hours: ! '{"thursday":[["12:00","18:00"]],"friday":[["12:00","18:00"]],"saturday":[["12:00","18:00"]],"sunday":[["12:00","18:00"]]}'
+      hours_display: Thu-Sun 12:00 PM-6:00 PM
+      latitude: 34.065894
+      locality: Los Angeles
+      longitude: -118.238252
+      name: Fifth Floor
+      neighborhood:
+      - Chinatown
+      - Historic Core
+      - Naud Junction
+      - New Chinatown
+      postcode: '90012'
+      region: CA
+      tel: (213) 687-8443
+      website: http://www.fifthfloorgallery.com
+    - address: Hollywood Blvd
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 97db90b4-358a-4bd1-9d10-f1df63479d84
+      latitude: 34.101447
+      locality: Los Angeles
+      longitude: -118.326944
+      name: Hollywood Boulevard
+      neighborhood:
+      - East Hollywood
+      - Vermont
+      postcode: '90028'
+      region: CA
+      tel: (832) 795-6488
+      website: http://www.panoramio.com/photo/934083
+    - category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: ba878681-ba81-4d63-a7ac-21c3e0acf6d2
+      hours: ! '{"monday":[["10:00","20:00"]],"wednesday":[["10:00","19:00"]],"thursday":[["10:00","19:00"]],"friday":[["10:00","20:00"]],"saturday":[["9:00","20:00"]],"sunday":[["10:00","19:00"]]}'
+      hours_display: Mon 10:00 AM-8:00 PM; Wed-Thu 10:00 AM-7:00 PM; Fri 10:00 AM-8:00
+        PM; Sat 9:00 AM-8:00 PM; Sun 10:00 AM-7:00 PM
+      latitude: 34.071793
+      locality: Los Angeles
+      longitude: -118.361091
+      name: Farmers Market
+      neighborhood:
+      - Mid City West
+      - Fairfax District
+      postcode: '90036'
+      region: CA
+      tel: (323) 933-0616
+    - address: 2643 E 4th St
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 5b40a9f9-22d3-4f7a-a0d9-01b5c6d266b6
+      latitude: 34.039076
+      locality: Los Angeles
+      longitude: -118.208189
+      name: J and M Market
+      neighborhood:
+      - Boyle Heights
+      postcode: '90033'
+      region: CA
+      tel: (323) 268-1317
+    - address: 998 S Robertson Blvd
+      address_extended: Ste 105
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: d2d083fa-6002-4327-9531-bc2b7aee04fc
+      latitude: 34.059318
+      locality: Los Angeles
+      longitude: -118.383545
+      name: Westside Market
+      neighborhood:
+      - Pico-Robertson
+      - Preuss
+      - South Carthay
+      - Beverly Hills
+      postcode: '90035'
+      region: CA
+      tel: (310) 652-1006
+    - address: 8616 W Pico Blvd
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: de1c3830-d829-012e-561a-003048cad9da
+      latitude: 34.053714
+      locality: Los Angeles
+      longitude: -118.379028
+      name: The Cask
+      neighborhood:
+      - West Los Angeles
+      postcode: '90035'
+      region: CA
+      tel: (310) 205-9008
+      website: http://www.thecaskla.com
+    - address: 6333 W 3rd St
+      address_extended: ! ' 3rd'
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      email: info@farmersmarketla.com
+      factual_id: 7ceeec90-eb31-44e5-9bd0-b1d7cffa3ac6
+      hours: ! '{"monday":[["9:00","21:00"]],"tuesday":[["9:00","21:00"]],"wednesday":[["9:00","21:00"]],"thursday":[["9:00","21:00"]],"friday":[["9:00","21:00"]],"saturday":[["9:00","20:00"],["9:00","20:00"]],"sunday":[["10:00","19:00"],["10:00","19:00"]]}'
+      hours_display: Mon-Fri 9:00 AM-9:00 PM; Sat 9:00 AM-8:00 PM; Sun 10:00 AM-7:00
+        PM
+      latitude: 34.071617
+      locality: Los Angeles
+      longitude: -118.359938
+      name: Farmer's Market
+      neighborhood:
+      - Mid-City West
+      - Miracle Mile
+      - Fairfax District
+      - Farmer Market
+      postcode: '90036'
+      region: CA
+      tel: (323) 933-9211
+      website: http://www.farmersmarketla.com
+    - address: 212 W 6th St
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 62195c9f-3764-4866-8fbc-85327dcb0e74
+      latitude: 34.046243
+      locality: Los Angeles
+      longitude: -118.251355
+      name: Market
+      neighborhood:
+      - Gallery Row
+      - Financial District
+      - Downtown Los Angeles
+      - Historic Core
+      - Jewelry District
+      - Downtown
+      postcode: '90014'
+      region: CA
+      tel: (213) 623-2004
+    - address: 8500 Beverly Blvd
+      address_extended: Ste 724
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 4acfadd4-7cc2-4ec5-b1ab-8429cd947fba
+      hours: ! '{"monday":[["10:00","21:00"]],"tuesday":[["10:00","21:00"]],"wednesday":[["10:00","21:00"]],"thursday":[["10:00","21:00"]],"friday":[["10:00","21:00"]],"saturday":[["10:00","21:00"]],"sunday":[["10:00","21:00"]]}'
+      hours_display: Open Daily 10:00 AM-9:00 PM
+      latitude: 34.076021
+      locality: Los Angeles
+      longitude: -118.3766
+      name: Premier Men
+      neighborhood:
+      - Briggs
+      - Miracle Mile
+      - Fairfax District
+      - Mid-City West
+      - West Hollywood
+      postcode: '90048'
+      region: CA
+      tel: (310) 854-0060
+      website: http://www.premiermen.com
+    - address: 2023 Sawtelle Blvd
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 15853a95-e8b5-4623-8f82-02873e71342c
+      hours: ! '{"monday":[["12:00","20:00"],["12:00","20:00"]],"tuesday":[["12:00","20:00"],["12:00","20:00"]],"wednesday":[["12:00","20:00"],["12:00","20:00"]],"thursday":[["12:00","20:00"]],"friday":[["12:00","20:00"]],"saturday":[["12:00","20:00"]],"sunday":[["12:00","18:00"],["12:00","18:00"]]}'
+      hours_display: Mon-Sat 12:00 PM-8:00 PM; Sun 12:00 PM-6:00 PM
+      latitude: 34.040315
+      locality: Los Angeles
+      longitude: -118.443184
+      name: Black Market
+      neighborhood:
+      - Sawtelle
+      - West L.A.
+      - West Los Angeles
+      postcode: '90025'
+      region: CA
+      tel: (310) 966-1555
+      website: http://www.blackmarketla.com
+    - address: 11620 Barrington Ct
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 2ba808bd-6542-4fe5-915a-a30449f38428
+      hours: ! '{"monday":[["9:30","19:00"]],"tuesday":[["9:30","19:00"]],"wednesday":[["9:30","19:00"]],"thursday":[["9:30","19:00"]],"friday":[["9:30","19:00"]],"saturday":[["9:30","19:00"]],"sunday":[["11:00","17:00"]]}'
+      hours_display: Mon-Sat 9:30 AM-7:00 PM; Sun 11:00 AM-5:00 PM
+      latitude: 34.065371
+      locality: Los Angeles
+      longitude: -118.469188
+      name: Market
+      neighborhood:
+      - Brentwood
+      - Brentwood Glen
+      - Westgate Heights
+      - Gallery Row
+      - Downtown Los Angeles
+      - Historic Core
+      - Fashion District
+      - Downtown
+      postcode: '90049'
+      region: CA
+      tel: (310) 471-3408
+    - address: 1556 N Highland Ave
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 123c99d4-2415-42e7-97b4-5ffc388a0394
+      hours: ! '{"tuesday":[["9:00","17:00"]],"wednesday":[["9:00","17:00"]],"thursday":[["9:00","17:00"]],"friday":[["9:00","17:00"]],"saturday":[["10:00","15:00"]]}'
+      hours_display: Tue-Fri 9:00 AM-5:00 PM; Sat 10:00 AM-3:00 PM
+      latitude: 34.099499
+      locality: Los Angeles
+      longitude: -118.338592
+      name: Sunshine Glass
+      neighborhood:
+      - Hollywood
+      - Yucca Corridor
+      - Hollywood Heights
+      postcode: '90028'
+      region: CA
+      tel: (323) 957-0703
+      website: http://www.sunshineglass.net
+    - address: 309 N Martel Ave
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 77b46650-127d-4317-8f9e-b9a71d4d7893
+      latitude: 34.076633
+      locality: Los Angeles
+      longitude: -118.351222
+      name: Sharpe Deborah Linens
+      neighborhood:
+      - Mid City West
+      - Bicentennial
+      - Fairfax District
+      postcode: '90036'
+      region: CA
+      tel: (323) 933-9869
+      website: http://www.deborahsharpelinens.com
+    - address: 2717 E 4th St
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: ddc56230-d829-012e-561a-003048cad9da
+      latitude: 34.038879
+      locality: Los Angeles
+      longitude: -118.207423
+      name: Teocintli
+      neighborhood:
+      - Boyle Heights
+      postcode: '90033'
+      region: CA
+      tel: (323) 266-2117
+      website: http://www.myspace.com/teocintli
+    - address: 2600 S Broadway
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 7b5c0120-1e18-012f-0643-0030487f54d8
+      latitude: 34.024488
+      locality: Los Angeles
+      longitude: -118.270088
+      name: Newtech Display
+      neighborhood:
+      - Jefferson
+      postcode: '90007'
+      region: CA
+      tel: (213) 747-6700
+      website: http://www.newtechdisplay.com
+    - address: 1284 W Sunset Blvd
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 165324e9-c72a-468d-84af-498c839a4118
+      latitude: 34.070749
+      locality: Los Angeles
+      longitude: -118.250566
+      name: Clothing of the American Mind
+      neighborhood:
+      - Greater Echo Park Elysian
+      - Angelino Heights
+      - Echo Park
+      postcode: '90026'
+      region: CA
+      tel: (213) 481-2004
+      website: http://www.cotam.org
+    - address: 5615 N Figueroa St
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: b0345c46-c17c-4450-b733-393291f550f7
+      latitude: 34.109288
+      locality: Los Angeles
+      longitude: -118.193703
+      name: Cindy's Hosiery
+      neighborhood:
+      - Highland Park
+      - Hermon
+      postcode: '90042'
+      region: CA
+      tel: (323) 258-0340
+    - address: 3630 W Slauson Ave
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 19a216bb-a5b6-4af7-9e18-5c95142f8016
+      fax: (323) 299-0922
+      latitude: 33.989101
+      locality: Los Angeles
+      longitude: -118.337137
+      name: Johnson Trophies
+      neighborhood:
+      - La Tijera
+      postcode: '90043'
+      region: CA
+      tel: (323) 299-0921
+    - address: 1242 S Berendo St
+      category_ids:
+      - 123
+      category_labels:
+      - - Retail
+      country: us
+      factual_id: 9207bcee-7ac9-4382-a0fb-79289954fa24
+      latitude: 34.047935
+      locality: Los Angeles
+      longitude: -118.293684
+      name: M and C Upholstery Supply
+      neighborhood:
+      - Pico-Union
+      - Pico Heights
+      - South Los Angeles
+      postcode: '90006'
+      region: CA
+      tel: (323) 731-8201
+    total_row_count: 1039

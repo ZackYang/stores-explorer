@@ -1,0 +1,381 @@
+---
+- address: 20 City Blvd W
+  address_extended: Ste R6
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 655970a4-a0b9-4688-91af-3419564c95ca
+  hours: ! '{"monday":[["11:00","22:00"]],"tuesday":[["11:00","22:00"]],"wednesday":[["11:00","22:00"]],"thursday":[["11:00","22:00"]],"friday":[["11:00","22:30"]],"saturday":[["11:00","22:30"]],"sunday":[["11:00","22:00"]]}'
+  hours_display: Mon-Thu 11:00 AM-10:00 PM; Fri-Sat 11:00 AM-10:30 PM; Sun 11:00 AM-10:00
+    PM
+  latitude: 33.782876
+  locality: Orange
+  longitude: -117.893032
+  name: Market Broiler
+  neighborhood:
+  - The Block
+  - Park Royale
+  postcode: '92868'
+  region: CA
+  tel: (714) 769-3474
+  website: http://www.marketbroiler.com
+- address: 2307 Concord Blvd
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: c81edea3-fa60-4b61-9a78-c4a4d40d9398
+  hours: ! '{"monday":[["9:00","19:00"]],"tuesday":[["9:00","19:00"]],"wednesday":[["9:00","19:00"]],"thursday":[["9:00","19:00"]],"friday":[["9:00","19:00"]],"saturday":[["9:00","18:00"]],"sunday":[["9:00","17:00"]]}'
+  hours_display: Mon-Fri 9:00 AM-7:00 PM; Sat 9:00 AM-6:00 PM; Sun 9:00 AM-5:00 PM
+  latitude: 37.976915
+  locality: Concord
+  longitude: -122.030966
+  name: European Food Market
+  neighborhood:
+  - Todos Santos
+  - North Concord
+  postcode: '94520'
+  region: CA
+  tel: (925) 686-9005
+- address: 1313 S Harbor Blvd
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 71e79c20-bef8-012e-5614-003048cad9da
+  hours: ! '{"monday":[["11:30","21:00"],["11:30","21:00"]],"tuesday":[["11:30","21:00"],["11:30","21:00"]],"wednesday":[["11:30","21:00"]],"thursday":[["11:30","21:00"]],"friday":[["11:30","21:00"]],"saturday":[["11:30","21:00"]],"sunday":[["11:30","21:00"],["11:30","21:00"]]}'
+  hours_display: Open Daily 11:30 AM-9:00 PM
+  latitude: 33.807731
+  locality: Anaheim
+  longitude: -117.917317
+  name: French Market
+  neighborhood:
+  - Disneyland
+  - Park Royale
+  - Anaheim Resort
+  - Platinum Triangle
+  postcode: '92802'
+  region: CA
+  tel: (714) 781-3463
+  website: http://disneyland.disney.go.com/disneyland/en_US/parks/dining/detail?name=FrenchMarketDiningPage
+- address: 592 Antelope Blvd
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 6f2f97c8-1a3b-43a9-b23e-49a2061cb67e
+  fax: (530) 527-3011
+  hours: ! '{"tuesday":[["9:00","19:00"]],"wednesday":[["9:00","19:00"]],"thursday":[["9:00","19:00"]],"friday":[["9:00","19:00"]],"saturday":[["9:00","19:00"]]}'
+  hours_display: Tue-Sat 9:00 AM-7:00 PM
+  latitude: 40.18616
+  locality: Red Bluff
+  longitude: -122.205144
+  name: Pronto Market
+  postcode: '96080'
+  region: CA
+  tel: (530) 529-0707
+- address: 605 E Lincoln Ave
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 2237cde5-ef5f-4a90-bd55-fce5a9191e38
+  latitude: 36.590291
+  locality: Reedley
+  longitude: -119.442968
+  name: Jimenez Meat Market
+  postcode: '93654'
+  region: CA
+  tel: (559) 637-2125
+- address: Avenue Of The Palms
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 5170da5e-dc6d-4497-94f7-e8db99297d91
+  latitude: 37.820317
+  locality: San Francisco
+  longitude: -122.369922
+  name: Treasure Island
+  neighborhood:
+  - Financial District
+  postcode: '94130'
+  region: CA
+  tel: (415) 898-0245
+  website: http://treasureislandwinefestfleetweek.eventbrite.com
+- address: 1990 N Fowler Ave
+  address_extended: Ste 120
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 121b90b3-4feb-4e5c-b750-8ebbc3d48f06
+  latitude: 36.865734
+  locality: Clovis
+  longitude: -119.684589
+  name: Meat Market
+  neighborhood:
+  - Melvin
+  postcode: '93619'
+  region: CA
+  tel: (559) 256-1390
+  website: http://www.themeatmarket.com
+- address: 159 E College St
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 13d4307a-90aa-4dd4-824c-1be1ddfd55bf
+  latitude: 34.087488
+  locality: Covina
+  longitude: -117.888775
+  name: Claro's Italian Mkt
+  neighborhood:
+  - Covina-Valley
+  - Charter Oak
+  postcode: '91723'
+  region: CA
+  tel: (626) 339-3333
+  website: http://www.claros.com
+- address: 42 Petaluma Blvd N
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  email: tnajiola@comcast.net
+  factual_id: 6a250cb2-0464-4281-9852-dad3b6bd6f6a
+  fax: (707) 778-3360
+  hours: ! '{"monday":[["17:30","18:30","Happy Hour"]],"tuesday":[["17:30","18:30","Happy
+    Hour"]],"wednesday":[["17:30","18:30","Happy Hour"]],"thursday":[["17:30","18:30","Happy
+    Hour"]],"sunday":[["17:30","18:30","Happy Hour"]]}'
+  hours_display: Mon-Thu 5:30 PM-6:30 PM; Sun 5:30 PM-6:30 PM
+  latitude: 38.233896
+  locality: Petaluma
+  longitude: -122.639971
+  name: Central Market
+  neighborhood:
+  - Mcnear
+  postcode: '94952'
+  region: CA
+  tel: (707) 778-9900
+  website: http://www.centralmarketpetaluma.com
+- address: 59 Throckmorton Ave
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: c48dcbbb-6e0b-4eba-a09a-8c8b59aa32df
+  hours: ! '{"monday":[["10:00","19:00"]],"tuesday":[["10:00","19:00"]],"wednesday":[["10:00","19:00"]],"thursday":[["10:00","19:00"]],"friday":[["10:00","19:00"]],"saturday":[["10:00","19:00"]],"sunday":[["10:00","19:00"]]}'
+  hours_display: Open Daily 10:00 AM-7:00 PM
+  latitude: 37.906595
+  locality: Mill Valley
+  longitude: -122.547406
+  name: The Tyler Florence Shop
+  neighborhood:
+  - Downtown Mill Valley
+  - Stawberry Point
+  - Homestead Valley
+  - Almonte
+  postcode: '94941'
+  region: CA
+  tel: (415) 380-9200
+  website: http://www.tylerflorence.com
+- address: 130 Avenida Granada
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: df10b645-528c-4c40-8f21-404f3523793f
+  latitude: 33.426506
+  locality: San Clemente
+  longitude: -117.613013
+  name: La Casa Verde De Granada
+  postcode: '92672'
+  region: CA
+  tel: (949) 498-2560
+  website: http://www.lacasaverdestore.com
+- address: 5305 E 2nd St
+  address_extended: Ste 101
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: c4cc10e8-3b79-428a-b0e3-e0f58369215a
+  latitude: 33.759335
+  locality: Long Beach
+  longitude: -118.13254
+  name: Anto's Cigar Lounge
+  neighborhood:
+  - Belmont Shore
+  postcode: '90803'
+  region: CA
+  tel: (562) 438-4200
+  website: http://www.antoscigarlounge.com
+- address: 28112 Bouquet Canyon Rd
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: c13b063d-bc0b-4a4f-b9e4-6006848363fc
+  latitude: 34.45057
+  locality: Santa Clarita
+  longitude: -118.497335
+  name: Carmela Louise
+  neighborhood:
+  - Saugus
+  postcode: '91350'
+  region: CA
+  tel: (661) 263-0349
+  website: http://www.carmelalouise.com
+- address: 20111 Brookhurst St
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: a14492dd-e143-4084-a713-54f2d22978f6
+  fax: (714) 378-0936
+  hours: ! '{"monday":[["11:00","10:00"]],"tuesday":[["11:00","10:00"]],"wednesday":[["11:00","10:00"]],"thursday":[["11:00","10:00"]],"friday":[["11:00","10:30"]],"saturday":[["11:00","10:30"]],"sunday":[["11:00","10:00"]]}'
+  hours_display: Mon-Thu 11:00 AM-10:00 AM; Fri-Sat 11:00 AM-10:30 AM; Sun 11:00 AM-10:00
+    AM
+  latitude: 33.670641
+  locality: Huntington Beach
+  longitude: -117.954224
+  name: Market Broiler
+  neighborhood:
+  - Magnolia Center
+  - Southeast Huntington Beach
+  postcode: '92646'
+  region: CA
+  tel: (714) 963-7796
+  website: http://www.marketbroiler.com
+- address: 3535 Geary Blvd
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 4b7c2891-c34b-4344-8789-77749a9de6a5
+  hours: ! '{"monday":[["10:00","21:00"]],"tuesday":[["10:00","21:00"]],"wednesday":[["10:00","21:00"]],"thursday":[["10:00","21:00"]],"friday":[["10:00","21:00"]],"saturday":[["10:00","21:00"]],"sunday":[["11:00","19:00"]]}'
+  hours_display: Mon-Sat 10:00 AM-9:00 PM; Sun 11:00 AM-7:00 PM
+  latitude: 37.781105
+  locality: San Francisco
+  longitude: -122.456759
+  name: Pier 1 Imports
+  neighborhood:
+  - Inner Richmond
+  - Lone Mountain
+  - Western Addition/NOPA
+  postcode: '94118'
+  region: CA
+  tel: (415) 387-6642
+  website: http://www.pier1.com
+- address: 909 E St
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: ddc51300-d829-012e-561a-003048cad9da
+  latitude: 32.714627
+  locality: San Diego
+  longitude: -117.156268
+  name: FeeLit
+  neighborhood:
+  - Central San Diego
+  - Downtown San Diego
+  - Core
+  - Gaslamp
+  postcode: '92101'
+  region: CA
+  tel: (707) 733-3548
+  website: http://www.FeeLitSanDiego.com
+- address: 804 W Gladstone St
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 060fa142-f3a7-43d4-8289-209ee0058cf7
+  latitude: 34.113894
+  locality: San Dimas
+  longitude: -117.822334
+  name: Blooming Creations
+  neighborhood:
+  - Downtown San Dimas
+  po_box: P.O. Box 5043
+  postcode: '91773'
+  region: CA
+  tel: (909) 599-0706
+  website: http://www.blooming-creations.net
+- address: 13373 Perris Blvd
+  address_extended: Ste 414
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 53aea84f-69dc-480b-bf22-54df9ca586eb
+  latitude: 33.927095
+  locality: Moreno Valley
+  longitude: -117.226852
+  name: Family Fish Market
+  postcode: '92553'
+  region: CA
+  tel: (951) 243-0443
+- address: 8124 W 3rd St
+  address_extended: Ste 211
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: 1ea3ff7c-1da6-4d16-bbf0-3b015536921d
+  fax: (323) 653-6991
+  latitude: 34.071981
+  locality: Los Angeles
+  longitude: -118.366767
+  name: Center For the Study of Political Graphics
+  neighborhood:
+  - Mid City West
+  - Fairfax District
+  postcode: '90048'
+  region: CA
+  tel: (323) 653-4662
+  website: http://www.politicalgraphics.org
+- address: 502 Chung King Ct
+  category_ids:
+  - 123
+  category_labels:
+  - - Retail
+  country: us
+  factual_id: ddb707c0-d829-012e-561a-003048cad9da
+  hours: ! '{"thursday":[["12:00","18:00"]],"friday":[["12:00","18:00"]],"saturday":[["12:00","18:00"]],"sunday":[["12:00","18:00"]]}'
+  hours_display: Thu-Sun 12:00 PM-6:00 PM
+  latitude: 34.065894
+  locality: Los Angeles
+  longitude: -118.238252
+  name: Fifth Floor
+  neighborhood:
+  - Chinatown
+  - Historic Core
+  - Naud Junction
+  - New Chinatown
+  postcode: '90012'
+  region: CA
+  tel: (213) 687-8443
+  website: http://www.fifthfloorgallery.com

@@ -1,0 +1,35 @@
+// Place all the styles related to the stores controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "./variables.css.scss";
+
+.left-bar {
+  
+}
+
+#search-form {
+  padding: 10px;
+  background-color: $c_grey;
+  
+  form {
+    margin-bottom: 0;
+  }
+  
+  select, input {
+    margin: 5 5px;
+  }
+  
+  .btn {
+    margin-bottom: 10px;
+  }
+  
+}
+
+#stores-list {
+  overflow-x: scroll;
+  margin-left: 0;
+  max-height: 600px;
+  table {
+    width: 2000px;
+  }
+}
