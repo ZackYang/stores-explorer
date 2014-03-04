@@ -22,7 +22,7 @@ module ExternalSourcesFinders
       puts filter
       search = self.table("places")
       search = search.filters(filter) unless filter.empty?
-      processed_rows search.rows
+      processed_rows search.page(1, :per => 50).rows
     end
     
     def processed_rows rows
