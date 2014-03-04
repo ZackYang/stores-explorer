@@ -1,36 +1,3 @@
-== README
-
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
-
-Objective: Explore local businesses via Factual API (http://factual.com/data/t/places) and save certain businesses in the database for further manipulation. (I'll provide you the API credential in a separate email)
-
-
-
 1. You will develop a simple web app with only 2 pages: stores-explorer.heroku.com and stores-explorer.heroku.com/stores/factual-FACTUALID. Please refer to store-explore-main.png and store-explore-store.png as reference.
 
 
