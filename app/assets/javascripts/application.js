@@ -14,7 +14,6 @@
 //= require jquery_ujs
 //= require_self
 //= require twitter/bootstrap
-//= require turbolinks
 //= require store.min
 //= require jquery.resizableColumns.min
 //= require_tree .
