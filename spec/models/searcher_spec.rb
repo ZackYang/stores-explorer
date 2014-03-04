@@ -1,18 +1,21 @@
+
 require 'spec_helper'
 
 describe Searcher do
   
   describe '#result' do
-    let(:factual) { ExternalSourcesFinders::Factual.new FACTUAL_CONFIG['key'], FACTUAL_CONFIG['secret'] }
-    let!(:time_now) { Time.now }
-    
-    before do
-      factual.stub(where: factual.processed_rows(yaml_fixtures['us_ca_la_retail']))
-    end
     
     context 'store in US' do
       
       context 'store in CA' do
+        
+        let(:factual) { ExternalSourcesFinders::Factual.new FACTUAL_CONFIG['key'], FACTUAL_CONFIG['secret'] }
+        let!(:time_now) { Time.now }
+    
+        before do
+          factual.stub(where: factual.processed_rows(yaml_fixtures['us_ca_la_retail']))
+        end
+        
         let(:searcher) { described_class.new source: 'factual', country: 'US', state: 'CA' }
         
         before do
@@ -23,6 +26,19 @@ describe Searcher do
         
         specify { searcher.result.size.should_not be_zero }
         specify { searcher.result.size.should == factual.where.size - 2 + 5 }
+      end
+      
+    end
+    
+    context 'search store by some word which be included by store`s name' do
+      
+      let(:searcher) { Searcher.new name: 'world' }
+      let!(:store) { FactoryGirl.create :store, name: 'Hello World, This Is Zack' }
+      
+      before { searcher.stub(remote_rows: []) }
+      
+      specify do
+        searcher.result.first.id.should == store.id
       end
       
     end
