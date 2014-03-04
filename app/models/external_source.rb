@@ -26,6 +26,12 @@ class ExternalSource < ActiveRecord::Base
   belongs_to :store
   
   before_create :save_to_store
+  
+  def attributes
+    attrs = super()
+    attrs.delete(nil)
+    attrs
+  end
     
   def save_to_store
     store_attributes = self.attributes.slice Store.attribute_names
