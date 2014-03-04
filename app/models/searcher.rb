@@ -1,7 +1,6 @@
 class Searcher
   
   SEARCHABLE_COLUMNS = [
-    :name,        
     :address,
     :city,    
     :state,
@@ -22,7 +21,6 @@ class Searcher
     SEARCHABLE_COLUMNS.each do |column_name|
       @conditions[column_name] = @options[column_name] unless @options[column_name].blank?
     end
-    puts @conditions
     @source = @conditions[:source] || DEFAULT_EXTERNAL_SOURCE 
   end
   
@@ -43,7 +41,9 @@ class Searcher
   end
   
   def stores_from_database
-    Store.where(@conditions).to_a
+    query = Store.where(@conditions)
+    query = query.where("name LIKE ?", "%#{@options[:name]}%") unless @options[:name].blank?
+    query.to_a
   end
   
   def stores_from_remote
