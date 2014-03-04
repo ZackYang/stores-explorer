@@ -32,6 +32,11 @@ gem "twitter-bootstrap-rails"
 
 gem 'factual-api'
 
+# gem 'eco'
+gem 'underscore-rails'
+gem 'backbone-on-rails'
+gem 'marionette-rails'
+
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false

@@ -16,5 +16,8 @@
 //= require twitter/bootstrap
 //= require store.min
 //= require jquery.resizableColumns.min
+//= require_tree ./app
+//= require underscore
+//= require backbone
+//= require backbone.marionette
 //= require_tree .
-
