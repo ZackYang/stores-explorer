@@ -38,6 +38,7 @@ group :doc do
 end
 
 group :development, :test do
+  gem 'faker'
   gem 'factory_girl_rails', '~> 4.1.0'
   gem 'shoulda-matchers',   '~> 2.1.0'
   gem 'rspec-rails',        '~> 2.0'
