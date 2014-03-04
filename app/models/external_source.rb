@@ -23,6 +23,15 @@ class ExternalSource < ActiveRecord::Base
   
   validates :source_id, uniqueness: { scope: :source }
   
+  belongs_to :store
+  
+  before_create :save_to_store
+    
+  def save_to_store
+    store_attributes = self.attributes.slice Store.attribute_names
+    self.store = Store.create(store_attributes)
+  end
+  
   def self.build_if_not_exsited rows=[], source='Factual'
     rows_ids = rows.map { |row| row[:source_id] }
     sources_ids = rows_ids.size.zero? ? [] : self.where('source_id IN (?) AND source = ?', rows_ids, source).map(&:source_id)

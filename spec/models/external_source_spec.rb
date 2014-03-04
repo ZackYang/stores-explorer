@@ -64,7 +64,20 @@ describe ExternalSource do
       
     end
     
+
+  end
+  
+  describe 'save to stores' do
     
+    context 'a totaly new store' do
+      
+      let(:source) { FactoryGirl.create :external_source }
+      let(:store_attributes) { %w{source_id name address city state zip country url latitude longitude} }
+      
+      specify { source.should_not be_a_new_record }
+      specify { source.store.should_not be_nil }
+      specify { source.attributes.slice(store_attributes).should == source.store.attributes.slice(store_attributes) }
+  end
     
   end
   

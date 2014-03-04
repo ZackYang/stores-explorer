@@ -21,6 +21,6 @@
 
 class Store < ActiveRecord::Base
   
-  
+  has_many :external_sources
   
 end
