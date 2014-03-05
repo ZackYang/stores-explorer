@@ -8,18 +8,13 @@ module ExternalSourcesFinders
     end
     
     def where conditions={}
-      # country
-      # state
-      # city
-      # category_ids
-      # search
       filter = {}
-      filter[:country] = conditions[:country]   if conditions[:country]
-      filter[:region] = conditions[:state]      if conditions[:state]
-      filter[:locality] = conditions[:city]     if conditions[:city]
-      filter[:name] = { '$search' => conditions[:name]} if conditions[:name]
+      filter[:factual_id] = conditions[:source_id]                        if conditions[:source_id]
+      filter[:country] = conditions[:country]                             if conditions[:country]
+      filter[:region] = conditions[:state]                                if conditions[:state]
+      filter[:locality] = conditions[:city]                               if conditions[:city]
+      filter[:name] = { '$search' => conditions[:name]}                   if conditions[:name]
       filter[:category_ids] = FACTUAL_CATEGORIES[conditions[:categories]] if conditions[:categories]
-      puts filter
       search = self.table("places")
       search = search.filters(filter) unless filter.empty?
       processed_rows search.page(1, :per => 50).rows

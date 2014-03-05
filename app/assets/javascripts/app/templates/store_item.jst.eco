@@ -1,0 +1,50 @@
+
+<td>
+  <% unless this.created_at: %>
+  <span class="label label-important">No</span>
+  <% else: %>
+  <span class="label label-success">Yes</span>
+  <% end %>
+</td>
+<td>
+  <%= this.source_id %>
+</td>
+<td>
+  <%= this.name %>
+</td>
+<td>
+  <%= this.address %>
+</td>
+<td>
+  <%= this.city %>
+</td>
+<td>
+  <%= this.state %>
+</td>
+<td>
+  <%= this.zip %>
+</td>
+<td>
+  <%= this.country %>
+</td>
+<td>
+  <%= this.neighborhood %>
+</td>
+<td>
+  <%= this.tel %>
+</td>
+<td>
+  <%= this.url %>
+</td>
+<td>
+  <%= this.latitude %>
+</td>
+<td>
+  <%= this.longitude %>
+</td>
+<td>
+  <%= this.hours %>
+</td>
+<td>
+  <%= this.categories %>
+</td>

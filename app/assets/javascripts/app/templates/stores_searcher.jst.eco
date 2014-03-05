@@ -1,0 +1,15 @@
+<form action="/api/v1/searchers" method="post" accept-charset="UTF-8">
+  <div class="row-fluid">
+    <input class="span12" id="searcher_name" name="searcher[name]" placeholder="Search" type="text">
+  </div>
+  <div class="row-fluid">
+    <select class="span4" id="searcher_country" name="searcher[country]"><option value="us">US</option></select>
+    <input class="span4" id="searcher_state" name="searcher[state]" placeholder="Region (State/Province)" type="text">
+    <input class="span4" id="searcher_city" name="searcher[city]" placeholder="Locality (Town/City)" type="text">
+  </div>
+  <div class="row-fluid">
+    <select class="span4" id="searcher_categories" name="searcher[categories]"></select>
+    <input class="span4" disabled="disabled" id="searcher_chain_name" name="searcher[chain_name]" placeholder="Chain Name" type="text">
+    <input class="span4 btn btn-primary" name="commit" type="submit" value="Search">
+  </div>
+</form>

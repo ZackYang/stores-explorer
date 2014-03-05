@@ -10,14 +10,17 @@
 // Read Sprockets README (https://github.com/sstephenson/sprockets#sprockets-directives) for details
 // about supported directives.
 //
+//= require ./stores_explorer
 //= require jquery
 //= require jquery_ujs
+//= require jquery.form.min
 //= require_self
 //= require twitter/bootstrap
 //= require store.min
 //= require jquery.resizableColumns.min
-//= require_tree ./app
 //= require underscore
 //= require backbone
 //= require backbone.marionette
+//= require namespace
+//= require ./app
 //= require_tree .
