@@ -52,7 +52,8 @@ class Searcher
   
   def remote_rows
     klass = "ExternalSourcesFinders::#{@source}".constantize
-    klass.new.where(@conditions).to_a
+    conditions = @options[:name].blank? ? @conditions : @conditions.merge(name: @options[:name])
+    klass.new.where(conditions).to_a
   end
   
 

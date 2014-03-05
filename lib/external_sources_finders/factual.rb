@@ -17,6 +17,8 @@ module ExternalSourcesFinders
       filter[:category_ids] = FACTUAL_CATEGORIES[conditions[:categories]] if conditions[:categories]
       search = self.table("places")
       search = search.filters(filter) unless filter.empty?
+      Rails.logger.debug("Factual Filter Options:")
+      Rails.logger.debug(filter)
       processed_rows search.page(1, :per => 50).rows
     end
     
