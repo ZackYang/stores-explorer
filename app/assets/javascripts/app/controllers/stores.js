@@ -28,6 +28,7 @@
     render: function() {
       this.storesList.render();
       this.storesSearcher.render();
+      this.storesSearcher.searchStores()
     }
     
   })

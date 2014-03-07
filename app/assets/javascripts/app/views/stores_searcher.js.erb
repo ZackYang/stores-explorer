@@ -19,15 +19,30 @@
       })
     },
     
+    templateHelpers: {
+      loadingImg: function() {
+        return "<%= asset_path('loading.gif') %>"
+      }
+    },
+    
     searchStores: function(event) {
       _this = this;
-      event.preventDefault();
-      $(event.target).ajaxSubmit({
+      if (event) {
+        event.preventDefault();
+      }
+      this.$el.find("form").ajaxSubmit({
         success: function(response) {
-          console.log(response)
+          _this.overlayToggle();
           _this.collection.reset(response);
+        },
+        beforeSubmit: function() {
+          _this.overlayToggle();
         }
       });
+    },
+    
+    overlayToggle: function() {
+      this.$el.find('.overlay').toggle()
     }
   })
   

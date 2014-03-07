@@ -10,6 +10,7 @@
 
  *= require ./variables
  *= require_self
+ *= require stores
  *= require_tree .
 
  */

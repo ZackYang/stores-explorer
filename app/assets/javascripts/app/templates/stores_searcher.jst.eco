@@ -13,3 +13,6 @@
     <input class="span4 btn btn-primary" name="commit" type="submit" value="Search">
   </div>
 </form>
+<div class="overlay">
+  <img src="<%= this.loadingImg() %>">
+</div>

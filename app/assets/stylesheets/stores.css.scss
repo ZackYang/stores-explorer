@@ -10,6 +10,19 @@
 #search-form {
   padding: 10px;
   background-color: $c_grey;
+  position: relative;
+  
+  .overlay {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: 0;
+    height: 140px;
+    background-color: white;
+    opacity: 0.5;
+    vertical-align: middle;
+    display: none;
+  }
   
   form {
     margin-bottom: 0;
@@ -31,5 +44,43 @@
   max-height: 600px;
   table {
     width: 2000px;
+    tbody {
+      td {
+        div {
+          white-space: nowrap;
+        }
+      }
+    }
   }
 }
+
+
+.map_canvas {
+  background-color: grey;
+  height: 300px;
+}
+
+.detail_container {
+  height: 300px;
+  margin-top: -300px;
+  position: relative;
+  background-color: rgba(255,255,255,0.4);
+  margin-left: 0px !important;
+  
+  .detail_panel {
+    width: 475px;
+    .address_panel {
+      
+    }
+    .category_panel {
+      
+    }
+    .neighborhood_panel {
+      
+    }
+  }
+  
+  .connect_panel {
+    
+  }
+ }

@@ -1,50 +1,80 @@
 
 <td>
-  <% unless this.created_at: %>
-  <span class="label label-important">No</span>
-  <% else: %>
-  <span class="label label-success">Yes</span>
-  <% end %>
+  <div>
+    <% unless this.created_at: %>
+    <span class="label label-important">No</span>
+    <% else: %>
+    <span class="label label-success">Yes</span>
+    <% end %>
+  </div>
 </td>
 <td>
-  <%= this.source_id %>
+  <div>
+    <a href="/stores/<%= this.source.toLowerCase() %>-<%= this.source_id %>" target="_blank"><%= this.source_id %></a>
+  </div>
 </td>
 <td>
-  <%= this.name %>
+  <div>
+    <%= this.name %>
+  </div>
 </td>
 <td>
-  <%= this.address %>
+  <div>
+    <%= this.address %>
+  </div>
 </td>
 <td>
-  <%= this.city %>
+  <div>
+    <%= this.city %>
+  </div>
 </td>
 <td>
-  <%= this.state %>
+  <div>
+    <%= this.state %>
+  </div>
 </td>
 <td>
-  <%= this.zip %>
+  <div>
+    <%= this.zip %>
+  </div>
 </td>
 <td>
-  <%= this.country %>
+  <div>
+    <%= this.country %>
+  </div>
 </td>
 <td>
-  <%= this.neighborhood %>
+  <div>
+    <%= this.neighborhood %>
+  </div>
 </td>
 <td>
-  <%= this.tel %>
+  <div>
+    <%= this.tel %>
+  </div>
 </td>
 <td>
-  <%= this.url %>
+  <div>
+    <%= this.url %>
+  </div>
 </td>
 <td>
-  <%= this.latitude %>
+  <div>
+    <%= this.latitude %>
+  </div>
 </td>
 <td>
-  <%= this.longitude %>
+  <div>
+    <%= this.longitude %>
+  </div>
 </td>
 <td>
-  <%= this.hours %>
+  <div>
+    <%= this.hours %>
+  </div>
 </td>
 <td>
-  <%= this.categories %>
+  <div>
+    <%= this.categories %>
+  </div>
 </td>

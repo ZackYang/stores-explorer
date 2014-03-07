@@ -17,7 +17,10 @@
 //= require_self
 //= require twitter/bootstrap
 //= require store.min
-//= require jquery.resizableColumns.min
+//= require jquery.event.drag-2.2
+//= require jquery.event.drop-2.2
+//= require slick.core
+//= require slick.grid
 //= require underscore
 //= require backbone
 //= require backbone.marionette

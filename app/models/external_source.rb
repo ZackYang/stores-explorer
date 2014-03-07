@@ -46,4 +46,11 @@ class ExternalSource < ActiveRecord::Base
     end.compact
   end
   
+  def self.find id
+    source_name = id.split('-').first
+    finder_class = "ExternalSourcesFinders::#{source_name.classify}".constantize
+    source_id = id.gsub("#{source_name}-", '')
+    self.new finder_class.find(source_id)
+  end
+  
 end
