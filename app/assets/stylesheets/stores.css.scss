@@ -66,21 +66,49 @@
   position: relative;
   background-color: rgba(255,255,255,0.4);
   margin-left: 0px !important;
+  position: relative;
+  z-index: 200;
   
   .detail_panel {
-    width: 475px;
+    width: 75%;
+    background-color: white;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 5px;
     .address_panel {
-      
-    }
-    .category_panel {
-      
-    }
-    .neighborhood_panel {
-      
+      font-weight: 600;
     }
   }
-  
   .connect_panel {
-    
+    position: absolute;
+    bottom: -50px;
   }
- }
+}
+
+.coordinate_container {
+  height: 30px;
+  bottom: 0;
+  right: 0;
+  position: absolute;
+  h5 {
+    line-height: 20px;
+    margin: 5px;
+    text-align: center;
+    background-color: white;
+  }
+}
+
+
+p.hours_panel {
+  margin-top: 50px;
+  background-color: gray;
+  padding: 10px;
+  color: white;
+  text-align: right;
+}
+
+button.add_to_db {
+  line-height: 30px;
+  float: right;
+  margin-top: 10px;
+}
