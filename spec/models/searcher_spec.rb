@@ -24,8 +24,9 @@ describe Searcher do
           searcher.stores_from_remote[1..2].each(&:save)
         end
         
-        specify { searcher.result.size.should_not be_zero }
-        specify { searcher.result.size.should == factual.where.size - 2 + 5 }
+        specify { searcher.stores_from_remote.size.should == yaml_fixtures['us_ca_la_retail'].size - 2 }
+        specify { Store.count.should == 7 }
+        specify { searcher.result.size.should == factual.where.size + 7 - 2 }
       end
       
     end
