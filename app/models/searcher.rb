@@ -16,6 +16,7 @@ class Searcher
   
 
   def initialize options={}
+    @page = options[:page] || 1
     @options = options
     @conditions = {}
     SEARCHABLE_COLUMNS.each do |column_name|
@@ -41,7 +42,7 @@ class Searcher
   end
   
   def stores_from_database
-    query = Store.where(@conditions)
+    query = Store.where(@conditions).paginate(:page => @page)
     query = query.where("name LIKE ?", "%#{@options[:name]}%") unless @options[:name].blank?
     query.to_a
   end
@@ -53,6 +54,7 @@ class Searcher
   def remote_rows
     klass = "ExternalSourcesFinders::#{@source}".constantize
     conditions = @options[:name].blank? ? @conditions : @conditions.merge(name: @options[:name])
+    conditions[:page] = @page
     klass.new.where(conditions).to_a
   end
   

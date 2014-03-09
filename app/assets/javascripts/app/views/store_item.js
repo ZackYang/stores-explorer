@@ -7,8 +7,20 @@
     tagName: 'tr',
     
     templateHelpers: {
-      showLink: function() {
-        
+      presentationID: function() {
+        if(this.id) {
+          return this.id
+        } else {
+          return this.source_id
+        }
+      },
+      
+      path: function() {
+        if (this.source && this.source_id) {
+          return "/stores/" + this.source.toLowerCase() + '-' + this.source_id
+        } else {
+          return "/stores/" + this.id
+        }
       }
     }
   })

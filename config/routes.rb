@@ -5,6 +5,7 @@ StoresExplorer::Application.routes.draw do
   namespace :api do
     namespace :v1 do
       resources :searchers
+      resources :stores
     end
   end
   # The priority is based upon order of creation: first created -> highest priority.

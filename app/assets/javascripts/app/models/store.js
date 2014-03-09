@@ -3,7 +3,7 @@
 
   se.models.Store = Backbone.Model.extend({
   
-    urlRoot: '/stores'
+    urlRoot: '/api/v1/stores'
   
   })
 })()

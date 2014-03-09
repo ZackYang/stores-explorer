@@ -1,0 +1,54 @@
+<div class="row-fluid">
+  <div class="span6">
+    <h2 class="upper"><%= this.name %>
+    </h2>
+  </div>
+  <div class="span6">
+    <button class="btn btn-warning add_to_db" <% if this.created_at: %>disabled=true<% end %>>
+      <% if this.created_at: %>
+        Saved
+      <% else: %>
+        Add To Database
+      <% end %>
+    </button>
+  </div>
+</div>
+<h3 class="upper lighter"><%= this.city %>, <%= this.state %>, <%= this.country %></h3>
+<div class="row-fluid relative_position">
+  <div class="span12 map_canvas">
+  </div>
+  <div class="detail_container span5">
+    <div class="detail_panel">
+      <div class="address_panel">
+        <%= this.address %>
+      </div>
+      <div>
+        <%= this.categories %>
+      </div>
+      <div>
+        <%= this.neighborhood %>
+      </div>
+    </div>
+    <div class="detail_panel">
+      <div>
+        Web: <a href="<%= this.url %>"><%= this.url %></a>
+      </div>
+      <div>
+        Tel: <%= this.tel %>
+      </div>
+    </div>
+    <div class="detail_panel connect_panel">
+      <div>
+        Source ID: <%= this.source_id %>
+      </div>
+    </div>
+  </div>
+  <div class="detail_container span5 coordinate_container">
+    <h5><%= this.latitude %>, <%= this.longitude %></h5>
+  </div>
+</div>
+<div class="row-fluid">
+  <p class="hours_panel">
+    HOURS: <%= this.hours %>
+  </p>
+</div>

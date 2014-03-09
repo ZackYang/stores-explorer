@@ -22,5 +22,6 @@
 class Store < ActiveRecord::Base
   
   has_many :external_sources
+  self.per_page = 50
   
 end

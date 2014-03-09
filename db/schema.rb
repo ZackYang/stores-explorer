@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140227141136) do
+ActiveRecord::Schema.define(version: 20140309063032) do
 
   create_table "external_sources", id: false, force: true do |t|
     t.string   "source"
@@ -50,6 +50,7 @@ ActiveRecord::Schema.define(version: 20140227141136) do
     t.decimal  "longitude",    precision: 10, scale: 7
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "url"
   end
 
 end

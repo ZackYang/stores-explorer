@@ -19,7 +19,11 @@
 #  updated_at       :datetime
 #
 
+require 'composite_primary_keys'
+
 class ExternalSource < ActiveRecord::Base
+  
+  self.primary_keys = :source_id, :source
   
   validates :source_id, uniqueness: { scope: :source }
   
@@ -34,7 +38,22 @@ class ExternalSource < ActiveRecord::Base
   end
     
   def save_to_store
-    store_attributes = self.attributes.slice Store.attribute_names
+    store_attributes = self.attributes.slice(
+    "name",
+    "address",
+    "city",
+    "state",
+    "hours",
+    "zip",
+    "hours",
+    "country",
+    "tel",
+    "neighborhood",
+    "url",
+    "latitude",
+    "longitude",
+    "categories"
+    )
     self.store = Store.create(store_attributes)
   end
   
@@ -51,6 +70,10 @@ class ExternalSource < ActiveRecord::Base
     finder_class = "ExternalSourcesFinders::#{source_name.classify}".constantize
     source_id = id.gsub("#{source_name}-", '')
     self.new finder_class.find(source_id)
+  end
+  
+  def presentation_id
+    "#{self.source.downcase}-#{self.source_id}"
   end
   
 end

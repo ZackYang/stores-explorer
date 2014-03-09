@@ -23,7 +23,7 @@ module ExternalSourcesFinders
       search = search.filters(filter) unless filter.empty?
       Rails.logger.debug("Factual Filter Options:")
       Rails.logger.debug(filter)
-      processed_rows(search.page(1, :per => 50).rows)
+      processed_rows(search.page(conditions[:page], :per => 50).rows)
     end
     
     def processed_rows rows

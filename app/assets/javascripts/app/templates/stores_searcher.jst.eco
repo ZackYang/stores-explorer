@@ -16,3 +16,11 @@
 <div class="overlay">
   <img src="<%= this.loadingImg() %>">
 </div>
+<div class="pagination">
+  <ul>
+    <li><a class="prev_page">Prev</a></li>
+    <li><a class="first_page">First Page</a></li>
+    <li><a class="active">1</a></li>
+    <li><a class="next_page">Next</a></li>
+  </ul>
+</div>

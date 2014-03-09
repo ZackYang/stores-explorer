@@ -10,7 +10,7 @@
 </td>
 <td>
   <div>
-    <a href="/stores/<%= this.source.toLowerCase() %>-<%= this.source_id %>" target="_blank"><%= this.source_id %></a>
+    <a href="<%= this.path() %>" target="_blank"><%= this.presentationID() %></a>
   </div>
 </td>
 <td>

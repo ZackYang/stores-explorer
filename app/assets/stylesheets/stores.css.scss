@@ -3,14 +3,18 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 @import "./variables.css.scss";
 
-.left-bar {
-  
+.right-bar {
+  height: 500px;
 }
 
 #search-form {
   padding: 10px;
   background-color: $c_grey;
   position: relative;
+  
+  .pagination {
+    margin: 0;
+  }
   
   .overlay {
     position: absolute;
@@ -41,7 +45,7 @@
 #stores-list {
   overflow-x: scroll;
   margin-left: 0;
-  max-height: 600px;
+  max-height: 450px;
   table {
     width: 2000px;
     tbody {

@@ -6,10 +6,15 @@
     className: 'span12',
     id: 'search-form',
     
+    currentPage: 1,
+    
     template: JST['app/templates/stores_searcher'],
     
     events: {
-      'submit form': 'searchStores'
+      'submit form': 'searchStores',
+      'click .next_page': 'nextPage',
+      'click .prev_page': 'prevPage',
+      'click .first_page': 'firstPage'
     },
     
     onRender: function() {
@@ -17,6 +22,7 @@
       _.each(STORES_CATEGORIES, function(category){
         $categorySelect.append($("<option value='" + category + "'>" + category + "</option>"))
       })
+      this.showMap()
     },
     
     templateHelpers: {
@@ -25,15 +31,37 @@
       }
     },
     
+    nextPage: function() {
+      this.currentPage++;
+      this.$el.find('form').submit()
+    },
+    
+    prevPage: function() {
+      if (this.currentPage > 1) {
+        this.currentPage--;
+        this.$el.find('form').submit()
+      }
+    },
+    
+    firstPage: function() {
+      this.currentPage = 1;
+      this.$el.find('form').submit();
+    },
+    
     searchStores: function(event) {
       _this = this;
       if (event) {
         event.preventDefault();
       }
       this.$el.find("form").ajaxSubmit({
+        data: {
+          searcher: { page: this.currentPage }
+        },
         success: function(response) {
           _this.overlayToggle();
           _this.collection.reset(response);
+          _this.markMap();
+          $('.pagination .active').html(_this.currentPage)
         },
         beforeSubmit: function() {
           _this.overlayToggle();
@@ -43,7 +71,44 @@
     
     overlayToggle: function() {
       this.$el.find('.overlay').toggle()
+    },
+    
+    showMap: function() {
+      var myLatlng = new google.maps.LatLng(0, 0);
+      var mapOptions = {
+        zoom: 5,
+        center: myLatlng,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+      }
+      this.map = new google.maps.Map($(".map_canvas")[0], mapOptions);
+    },
+    
+    markMap: function() {
+      _this = this;
+      
+      // clean up markers
+      if (this.markers == undefined) {
+        this.markers = [];
+      }
+      _.each(this.markers, function(marker) {
+        marker.setMap(null)
+      })
+      
+      var bounds = new google.maps.LatLngBounds();
+      this.collection.each(function(store){
+        var latlng = new google.maps.LatLng(store.get('latitude'), store.get('longitude'));
+        var marker = new google.maps.Marker({
+          position: latlng,
+          title: store.get("address")
+        });
+        _this.markers.push(marker)
+        bounds.extend(latlng);
+        marker.setMap(_this.map)
+      })
+      this.map.fitBounds(bounds);
     }
+    
+    
   })
   
 })()

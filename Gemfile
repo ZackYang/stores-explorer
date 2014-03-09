@@ -6,6 +6,8 @@ gem 'rails', '4.0.3'
 # Use mysql as the database for Active Record
 gem 'mysql2'
 
+gem 'will_paginate', '~> 3.0'
+
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 4.0.0'
 
@@ -49,6 +51,8 @@ group :development, :test do
   gem 'rspec-rails',        '~> 2.0'
   gem 'annotate', ">=2.6.0"
 end
+
+gem 'composite_primary_keys'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
