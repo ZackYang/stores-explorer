@@ -52,6 +52,11 @@ group :development, :test do
   gem 'annotate', ">=2.6.0"
 end
 
+group :production do
+  gem 'pg'
+  gem 'rails_12factor', group: :production
+end
+
 gem 'composite_primary_keys'
 
 # Use ActiveModel has_secure_password
